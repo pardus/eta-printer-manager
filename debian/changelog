@@ -1,3 +1,13 @@
+eta-printer-manager (1.0.7) unstable; urgency=medium
+
+  [ Ali Riza KESKIN ]
+  * dont close vte terminal if child exit is not 0
+
+  [ Fatih Altun ]
+  * Update authors
+
+ -- Fatih Altun <fatih.altun@pardus.org.tr>  Fri, 28 Aug 2026 16:35:00 +0300
+
 eta-printer-manager (1.0.6) unstable; urgency=medium
 
   [ Ali Riza KESKIN ]
