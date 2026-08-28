@@ -121,8 +121,9 @@ class DynamicDriverInstaller:
         def on_child_exited(vte_term, status):
             logger.info(f"VTE installation process exited with status code: {status}")
             install_result["success"] = (status == 0)
-            prog_dialog.destroy()
-            Gtk.main_quit()
+            if status == 0:
+                prog_dialog.destroy()
+                Gtk.main_quit()
 
         terminal.connect("child-exited", on_child_exited)
 
