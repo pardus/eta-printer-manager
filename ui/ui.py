@@ -426,7 +426,6 @@ class MainWindow:
         dialog.set_copyright("\u00a9 T\u00dcB\u0130TAK B\u0130LGEM / Pardus")
         dialog.set_license_type(Gtk.License.GPL_3_0)
         dialog.set_authors([
-            "Fatih Altun <dev@pardus.org.tr>",
             "Ali \u0130hsan \u00d6zbek <dev@pardus.org.tr>",
             "Pardus Developers <dev@pardus.org.tr>",
         ])
