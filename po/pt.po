@@ -1,0 +1,323 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-26 10:19+0300\n"
+"PO-Revision-Date: 2026-09-10 15:36+0100\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
+"Language-Team: \n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+#: ui/ui.py:97
+msgid "Generic PostScript Printer"
+msgstr "Impressora PostScript genérica"
+
+#: ui/ui.py:98
+msgid "Generic PCL Laser Printer"
+msgstr "Impressora a laser PCL genérica"
+
+#: ui/ui.py:99
+msgid "IPP Everywhere (Driverless)"
+msgstr "IPP Everywhere (sem controladores)"
+
+#: ui/ui.py:100
+msgid "Raw Queue (No Driver)"
+msgstr "Fila em bruto (sem controlador)"
+
+#: ui/ui.py:141
+msgid "No automatic devices found. Please add manually above."
+msgstr "Não foram encontrados dispositivos automáticos. Adicione-os manualmente acima."
+
+#: ui/ui.py:270
+msgid "Printer"
+msgstr "Impressora"
+
+#: ui/ui.py:270
+msgid "Scanner"
+msgstr "Digitalizadora"
+
+#: ui/ui.py:300 ui/ui.py:302
+msgid "Open Queue"
+msgstr "Abrir fila de espera"
+
+#: ui/ui.py:304
+msgid "Test Page"
+msgstr "Página de teste"
+
+#: ui/ui.py:306
+msgid "Send Test Page"
+msgstr "Enviar página de teste"
+
+#: ui/ui.py:308
+msgid "Default"
+msgstr "Predefinida"
+
+#: ui/ui.py:308
+msgid "Set as Default"
+msgstr "Definir como predefinida"
+
+#: ui/ui.py:314
+msgid "Set as Default Printer"
+msgstr "Definir como impressora predefinida"
+
+#: ui/ui.py:318
+msgid "Resume"
+msgstr "Retomar"
+
+#: ui/ui.py:318
+msgid "Pause"
+msgstr "Pausa"
+
+#: ui/ui.py:323
+msgid "Resume Printer"
+msgstr "Retomar impressora"
+
+#: ui/ui.py:328
+msgid "Pause Printer"
+msgstr "Colocar impressora em pausa"
+
+#: ui/ui.py:332
+msgid "Remove"
+msgstr "Remover"
+
+#: ui/ui.py:335
+msgid "Remove Printer"
+msgstr "Remover impressora"
+
+#: ui/ui.py:365
+#, python-brace-format
+msgid "Do you want to perform '{1}' action for device '{0}'?"
+msgstr "Pretende realizar a ação '{1}' no dispositivo '{0}'?"
+
+#: ui/ui.py:421 data/main_window.glade:8 data/main_window.glade:15
+#: data/main_window.glade:59
+msgid "ETA Printer Manager"
+msgstr "Gestor de Impressoras ETA"
+
+#: ui/ui.py:423
+msgid "Printer management tool for ETA and Pardus systems."
+msgstr "Ferramenta de gestão de impressoras para os sistemas ETA e Pardus."
+
+#: ui/ui.py:425
+msgid "Pardus Official Website"
+msgstr "Site oficial do Pardus"
+
+#: ui/ui.py:490
+msgid "Default Printer"
+msgstr "Impressora predefinida"
+
+#: ui/ui.py:492
+msgid "Paused"
+msgstr "Em pausa"
+
+#: ui/ui.py:494
+msgid "Idle"
+msgstr "Em espera"
+
+#: ui/ui.py:520
+msgid "Missing Information"
+msgstr "Informação em falta"
+
+#: ui/ui.py:521
+msgid "Please fill in both Device Name and Connection Address (URI)."
+msgstr "Preencha os campos Nome do dispositivo e Endereço de ligação (URI)."
+
+#: ui/ui.py:527
+msgid "Invalid Device Name"
+msgstr "Nome do dispositivo inválido"
+
+#: ui/ui.py:528
+msgid "Device name cannot contain spaces. Please use underscores (_) or join words."
+msgstr "O nome do dispositivo não pode conter espaços. Utilize sublinhados (_) ou una as palavras."
+
+#: ui/ui.py:553
+msgid "Success"
+msgstr "Sucesso"
+
+#: ui/ui.py:553
+msgid "Device added successfully."
+msgstr "O dispositivo foi adicionado com sucesso."
+
+#: ui/ui.py:559
+msgid "Failed to Add Device"
+msgstr "Falha ao adicionar o dispositivo"
+
+#: ui/ui.py:560
+#, python-brace-format
+msgid ""
+"An error occurred while adding the printer:\n"
+"\n"
+"{0}"
+msgstr ""
+"Ocorreu um erro ao adicionar a impressora:\n"
+"\n"
+"{0}"
+
+#: ui/ui.py:560
+msgid "Unknown error"
+msgstr "Erro desconhecido"
+
+#: src/driver_installer.py:76
+msgid "Driver Package Required"
+msgstr "É necessário o pacote de controladores"
+
+#: src/driver_installer.py:79
+#, python-brace-format
+msgid ""
+"The following package(s) are required for '{0}':\n"
+"\n"
+"{1}\n"
+"\n"
+"Do you want to install them now?"
+msgstr ""
+"São necessários os seguintes pacotes para o ‘{0}’:\n"
+"\n"
+"{1}\n"
+"\n"
+"Pretende instalá-los agora?"
+
+#: src/driver_installer.py:91
+msgid "Installing Driver Package..."
+msgstr "A instalar o pacote de controladores..."
+
+#: src/driver_installer.py:102
+#, python-brace-format
+msgid "Installing required driver package(s): {0}"
+msgstr "A instalar o(s) pacote(s) de controladores necessário(s): {0}"
+
+#: src/ppd_selector.py:14
+msgid "Select Printer Driver"
+msgstr "Selecionar controlador da impressora"
+
+#: src/ppd_selector.py:39
+msgid "1. Select Manufacturer"
+msgstr "1. Selecionar o fabricante"
+
+#: src/ppd_selector.py:42
+msgid "Filter manufacturers..."
+msgstr "Filtrar fabricantes..."
+
+#: src/ppd_selector.py:58
+msgid "2. Select Model / Driver"
+msgstr "2. Selecionar modelo / controlador"
+
+#: src/ppd_selector.py:61
+msgid "Filter models..."
+msgstr "Filtrar modelos..."
+
+#: src/ppd_selector.py:74
+msgid "Fetching system drivers..."
+msgstr "A carregar controladores do sistema..."
+
+#: src/ppd_selector.py:80 data/main_window.glade:159
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/ppd_selector.py:84
+msgid "Select Driver"
+msgstr "Selecionar controlador"
+
+#: src/ppd_selector.py:125
+msgid "System drivers loaded. Please pick a Manufacturer."
+msgstr "Os controladores do sistema foram carregados. Selecione um fabricante."
+
+#: src/ppd_selector.py:157
+#, python-brace-format
+msgid "Showing models for {0}."
+msgstr "A apresentar modelos para {0}."
+
+#: src/ppd_selector.py:175
+msgid "Please pick a specific model from the right column."
+msgstr "Escolha um modelo específico na coluna da direita."
+
+#: src/queue_window.py:12
+#, python-brace-format
+msgid "Print Queue - {0}"
+msgstr "Fila de impressão - {0}"
+
+#: src/queue_window.py:39
+msgid "Job ID"
+msgstr "ID do trabalho"
+
+#: src/queue_window.py:39
+msgid "User"
+msgstr "Utilizador"
+
+#: src/queue_window.py:39
+msgid "Size"
+msgstr "Tamanho"
+
+#: src/queue_window.py:39
+msgid "Submitted Time"
+msgstr "Hora de envio"
+
+#: src/queue_window.py:51
+msgid "Cancel Job"
+msgstr "Cancelar trabalho"
+
+#: src/queue_window.py:85
+msgid "Unknown"
+msgstr "Desconhecido"
+
+#: data/main_window.glade:22
+msgid "About Us"
+msgstr "Sobre Nós"
+
+#: data/main_window.glade:89 data/main_window.glade:111
+#: data/main_window.glade:153
+msgid "Add Device"
+msgstr "Adicionar dispositivo"
+
+#: data/main_window.glade:100
+msgid "Add a printer or scanner on network or USB"
+msgstr "Adicionar uma impressora ou uma digitalizadora através da rede ou por USB"
+
+#: data/main_window.glade:128
+msgid "Your Devices"
+msgstr "Os seus dispositivos"
+
+#: data/main_window.glade:169
+msgid "Add"
+msgstr "Adicionar"
+
+#: data/main_window.glade:199
+msgid "Add Device Manually"
+msgstr "Adicionar dispositivo manualmente"
+
+#: data/main_window.glade:216
+msgid "Device Name:"
+msgstr "Nome do dispositivo:"
+
+#: data/main_window.glade:232
+msgid "e.g. Office_Printer"
+msgstr "por exemplo, Office_Printer"
+
+#: data/main_window.glade:243
+msgid "Connection Address (URI):"
+msgstr "Endereço de ligação (URI):"
+
+#: data/main_window.glade:259
+msgid "e.g. ipp://192.168.1.50/ipp/print"
+msgstr "por exemplo. ipp://192.168.1.50/ipp/print"
+
+#: data/main_window.glade:270
+msgid "Driver (PPD):"
+msgstr "Contralador (PPD):"
+
+#: data/main_window.glade:299
+msgid "Browse PPD..."
+msgstr "Explorador PPD..."
+
+#: data/main_window.glade:334
+msgid "Devices Found on Network and System"
+msgstr "Dispositivos detetados na rede e no sistema"

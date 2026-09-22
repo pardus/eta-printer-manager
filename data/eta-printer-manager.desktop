@@ -1,7 +1,9 @@
 [Desktop Entry]
 Name=ETA Printer Manager
+Name[pt]=Gestor de Impressoras ETA
 Name[tr]=ETA Yazıcı Yöneticisi
 Comment=Manage your printers
+Comment[pt]=Faça a gestão das suas impressoras
 Comment[tr]=Yazıcılarınızı yönetin
 Exec=eta-printer-manager
 Icon=eta-printer-manager
