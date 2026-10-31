@@ -127,7 +127,7 @@ class CupsBackend:
                 my_jobs=False,
                 which_jobs="not-completed",
                 requested_attributes=[
-                    "job-id", "job-name", "job-state", "printer-uri",
+                    "job-id", "job-name", "job-state", "job-printer-uri",
                     "job-originating-user-name", "job-owner",
                     "job-k-octets", "time-at-creation",
                 ],
@@ -138,7 +138,7 @@ class CupsBackend:
 
         result = []
         for job_id, details in jobs.items():
-            job_printer = details.get("printer-uri", "").rsplit("/", 1)[-1]
+            job_printer = details.get("job-printer-uri", "").rsplit("/", 1)[-1]
             if printer_name and job_printer != printer_name:
                 continue
 
