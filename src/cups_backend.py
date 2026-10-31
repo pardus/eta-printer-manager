@@ -196,7 +196,11 @@ class CupsBackend:
             return {}
 
     def find_best_ppd(self, model_name, device_uri=""):
-        default_ppd = "drv:///sample.drv/generic.ppd"
+        # cupsd accepts "everywhere" only for these schemes
+        if device_uri.startswith(("ipp://", "ipps://", "dnssd://", "ippusb://")):
+            default_ppd = "everywhere"
+        else:
+            default_ppd = "drv:///sample.drv/generic.ppd"
         if not model_name:
             return default_ppd
 
@@ -235,9 +239,6 @@ class CupsBackend:
 
         if best_ppd and best_score >= 2:
             return best_ppd
-
-        if device_uri and device_uri.startswith(("ipp://", "ipps://", "http://", "https://")):
-            return "everywhere"
 
         return default_ppd
 
