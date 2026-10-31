@@ -139,7 +139,7 @@ class PPDSelectorWindow(Gtk.Window):
             row_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=2, margin=6)
 
             lbl_title = Gtk.Label(label=model, xalign=0)
-            lbl_title.set_markup(f"<b>{model}</b>")
+            lbl_title.set_markup("<b>{}</b>".format(GLib.markup_escape_text(model)))
             lbl_desc = Gtk.Label(label=f"File: {models_dict[model]}", xalign=0)
             lbl_desc.get_style_context().add_class("dim-label")
 

@@ -191,7 +191,7 @@ class AddDeviceDialog:
             search = attrs.get("make_and_model") or dev_name
             GLib.idle_add(self._apply_auto_match,
                           attrs.get("suggested_name", ""),
-                          self.cups_backend.find_best_ppd(search))
+                          self.cups_backend.find_best_ppd(search, device_uri=dev_uri))
 
         threading.Thread(target=worker, daemon=True).start()
 
