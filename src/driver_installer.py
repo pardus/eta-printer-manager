@@ -116,16 +116,18 @@ class DynamicDriverInstaller:
         box.pack_start(scrolled_window, True, True, 0)
 
         install_result = {"success": False}
+        install_loop = GLib.MainLoop()
 
         # 3. Handle Child Process Termination
+        # A failed install stays on screen so the output can be read, closing the dialog ends the wait.
         def on_child_exited(vte_term, status):
             logger.info(f"VTE installation process exited with status code: {status}")
             install_result["success"] = (status == 0)
             if status == 0:
                 prog_dialog.destroy()
-                Gtk.main_quit()
 
         terminal.connect("child-exited", on_child_exited)
+        prog_dialog.connect("destroy", lambda _widget: install_loop.quit())
 
         prog_dialog.show_all()
 
@@ -151,7 +153,7 @@ class DynamicDriverInstaller:
             prog_dialog.destroy()
             return False
 
-        # Keep GTK Event Loop Running until process finishes
-        Gtk.main()
+        # Keep GTK Event Loop Running until the dialog is closed
+        install_loop.run()
 
         return install_result["success"]
